@@ -8,7 +8,7 @@ jobs:
           - name: checkout code
             uses: actions/checkout@v4
           - name: setup go
-            uses: actions/setup-go@v5.
+            uses: actions/setup-go@v5.5
           - name: build go binary
             run: go build -o main main.go
           - name: run binary
@@ -19,7 +19,7 @@ jobs:
           - name: checkout code
             uses: actions/checkout@4
           - name: setup go
-            uses: actions/setup-go@v5.
+            uses: actions/setup-go@v5.5.0
           - name: build go binary
             run: go build -o main.exe main.go
           - name: run binary
@@ -30,7 +30,7 @@ jobs:
           - name: checkout code
             uses: actions/checkout@4
           - name: setup go
-            uses: actions/setup-go@v5.
+            uses: actions/setup-go@v5.5.0
           - run: go build -o main main.go
           - run: ./main
     job4:
@@ -40,7 +40,7 @@ jobs:
           - name: checkout code
             uses: actions/checkout@v4
           - name: setup go
-            uses: actions/setup-go@v5.
+            uses: actions/setup-go@v5.5.0
           - name: Cross-compile for all platforms
             run: |
               echo "Cross compiling for all platforms:"
